@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-inverse">
+      
+      <a class="navbar-brand" href="<%= root_path %>">Bananas</a>
+
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <%= link_to 'New Banana', new_banana_path, class: 'nav-link' %>
+        </li>
+      </ul>
+  
+
+    
+  </nav>
+
+      
+
+
+    <%= yield %>
+  </body>
+</html>

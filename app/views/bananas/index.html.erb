@@ -1,0 +1,10 @@
+<h1>Bananas</h1>
+<h1><%= @bananas.inspect %></h1>
+
+<% @bananas.each do |banana| %>
+  <div>
+    <h1><%= banana.length.to_f %> inches, <%= banana.colour %></h1><br />
+  </div>
+
+  <hr />
+<% end %>

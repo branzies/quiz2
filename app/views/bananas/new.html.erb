@@ -1,0 +1,8 @@
+<h1>Enter Your Banana Details</h1>
+
+  <%= simple_form_for @banana do |f| %>
+    <%= f.input :length %>
+    <%= f.input :colour %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
